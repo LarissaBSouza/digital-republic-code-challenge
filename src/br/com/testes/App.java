@@ -70,16 +70,20 @@ public class App {
 			boolean contagemLargura = true; // validação que quando for true, reinicia a aplicação
 
 			System.out.println("*******************************");
+			
 			// Informa o usuário em qual parede se refere as perguntas.
 			System.out.println("********* PAREDE " + i + " ************");
 
+			
 			// Condicional que irá validar as informações enquanto for false,
 			// do contrário, reinicia a aplicação.
 			while (contagemAltura && contagemLargura) {
 
 				System.out.println("Digite a altura da parede " + i + ": ");
+				
 				String alturaStr = sc.next(); // Recebendo os dados como string para diminuição de
 				// possíveis erros.
+				
 				altura = Double.parseDouble(alturaStr.replace(",", "."));
 				// Fazendo a conversão dos dados recebidos do usuário para double.
 				// A aplicação irá aceitar entradas com ponto e com vírgula.
@@ -87,9 +91,6 @@ public class App {
 				alturas.add(altura);
 				// Adicionando a altura recebida a lista declarada acima.
 
-				System.out.println("As alturas das suas paredes são: " + alturas);
-				// Exibindo as alturas inseridas na lista.
-				System.out.println("");
 
 				// Validação se é uma altura permitida, caso não,
 				// o programa irá começar tudo novamente.
@@ -116,12 +117,9 @@ public class App {
 				larguras.add(largura);
 				// Adicionando a largura recebida a lista declarada acima.
 
-				System.out.println("As larguras das suas paredes são: " + larguras);
-				// Exibindo as larguras inseridas na lista.
-				System.out.println("");
 
 				// Validação se é uma largura permitida, caso não,
-				// o programa irá começar tudo novamente.
+				// o programa irá recomeçar.
 				if (largura < 1.00 && largura > 15.0) {
 					System.out.println("Largura inválida");
 					System.out.println(
@@ -158,10 +156,6 @@ public class App {
 				// Cálcula da área das portas.
 				Double areaPorta = portas * 1.52;
 
-				// Área que a(s) porta/portas ocupa(m)
-				System.out.println("A área da sua porta é: " + areaPorta);
-				System.out.println("");
-
 				// Pergunta de sim ou não se o usuário gostaria de declarar janelas nessa
 				// parede.
 				System.out.println("A parede " + i + " possui janelas? S/N ");
@@ -190,18 +184,12 @@ public class App {
 				// Cálculo área das janelas.
 				Double areaJanela = janelas * 2.40;
 
-				System.out.println("A área da sua janela é: " + areaJanela);
-				System.out.println("");
-
 				// Cálculo da área da parede.
 				Double areaParede = altura * largura;
-				System.out.println("A área da sua parede sem considerar janelas e portas é: " + areaParede);
-				System.out.println("");
 
 				// Soma das áreas de paredes e portas
 				Double areaTotalJeP = areaPorta + areaJanela;
-				System.out.println("A área de janelas e portas da sua parede é de: " + areaTotalJeP);
-				System.out.println("");
+
 
 				// Validação se a área de paredes e portas ultrapassam 50% da área total
 				// da parede, onde se ultrapassar, a aplicação é reiniciada.
@@ -216,10 +204,7 @@ public class App {
 				// Área total da parede levando em considerção agora, as áreas de janelas e
 				// portas.
 				Double areaTotalParede = areaParede - areaTotalJeP;
-				System.out.println(
-						"A área total da sua parede já considerado e retirando a área de janelas e portas é de: "
-								+ areaTotalParede);
-				System.out.println("");
+
 
 				// Validação se a parede é maior que 1m² e menor que 50m², se ultrapassado essas
 				// medidas
@@ -244,8 +229,8 @@ public class App {
 				}
 
 				// Listagem das áreas contidas na lista paredes.
-				System.out.println("As áreas das suas paredes são: " + paredes);
-				System.out.println("");
+//				System.out.println("As áreas das suas paredes são: " + paredes);
+//				System.out.println("");
 
 				// Áreal total do meu ambiente já considerando possíveis janelas, e portas.
 				System.out.println("A área total do seu ambiente é de " + areaTotal);
@@ -261,9 +246,6 @@ public class App {
 
 		System.out.println("");
 		System.out.println("");
-
-		// Informando ao usuário a quantidade que ele irá precisar.
-		System.out.println("Você irá precisar de " + litrosNecessarios + " litros de tinta");
 
 		// Instância do meu objeto, onde serão atribuídas as quantidades necessárias de
 		// latas.
@@ -310,7 +292,6 @@ public class App {
 			latasUtilizadas.setLitros2(contador2);
 		}
 
-		System.out.println("2.5 = " + litrosNecessarios);
 
 		while (litrosNecessarios - lata4.getLitrosLata() >= 0) {
 			litrosNecessarios -= lata4.getLitrosLata();
