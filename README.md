@@ -18,7 +18,9 @@ Abra o terminal e rode os comandos abaixo:
 
 Clonando o repositório: 
 
+```
 git clone https://gitlab.com/LarissaBSouza/digital-republic-code-challenge.git
+```
 
 Abrindo o projeto:
 
