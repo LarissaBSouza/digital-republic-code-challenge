@@ -38,11 +38,6 @@ public class App {
 		Double areaTotal; // Área total do cômodo já calculada.
 
 		Double areaAmbiente = 0.0; // Reatribuição da váriavel de área total.
-
-//		Integer contador18 = 0; // Contador de latas de 18L
-//		Integer contador3 = 0; // Contador de latas de 3.6L
-//		Integer contador2 = 0; // Contador de latas de 2.5L
-//		Integer contador0 = 0; // Contador de latas de 0.5L
 		
 		// FIM DAS VARIÁVEIS LOCAIS.
 		
@@ -246,8 +241,7 @@ public class App {
 		Double litrosNecessarios = Math.ceil(areaAmbiente / 5);
 
 		
-		// Instância do meu objeto, onde serão atribuídas as quantidades necessárias de
-		// latas.
+		// Instância do meu objeto.
 		LatasUtilizadas latasUtilizadas = new LatasUtilizadas();
 		
 		latasUtilizadas.calculoTintas(litrosNecessarios);

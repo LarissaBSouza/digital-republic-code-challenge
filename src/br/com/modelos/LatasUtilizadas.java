@@ -21,32 +21,7 @@ public class LatasUtilizadas {
 		System.out.println("Lata de 2.5L: " + litros2);
 		System.out.println("Lata de 0.5: " + litros0);
 	}
-
-	// Método para definir os litros necessários.
-	public void setLitrosUsados(Double litrosUsados) {
-		this.litrosUsados = litrosUsados;
-	}
-
-	// Método para definir quantas latas de tinta de 18L serão necessárias
-	public void setLitros18(Integer litros18) {
-		this.litros18 = litros18;
-	}
-
-	// Método para definir quantas latas de tinta de 3.6L serão necessárias
-	public void setLitros3(Integer litros3) {
-		this.litros3 = litros3;
-	}
-
-	// Método para definir quantas latas de tinta de 2.5L serão necessárias
-	public void setLitros2(Integer litros2) {
-		this.litros2 = litros2;
-	}
-
-	// Método para definir quantas latas de tinta de 0.5L serão necessárias
-	public void setLitros0(Integer litros0) {
-		this.litros0 = litros0;
-	}
-
+	
 	public void calculoTintas(Double litrosNecessarios) {
 
 		Integer contador18 = 0; // Contador de latas de 18L
@@ -108,8 +83,34 @@ public class LatasUtilizadas {
 		// irá precisar de cada.
 		latasUtilizadas.mostrarDetalhes();
 
-		// FIM DO PROGRAMA
-
 	}
+	
+
+	// Método para definir os litros necessários.
+	public void setLitrosUsados(Double litrosUsados) {
+		this.litrosUsados = litrosUsados;
+	}
+
+	// Método para definir quantas latas de tinta de 18L serão necessárias
+	public void setLitros18(Integer litros18) {
+		this.litros18 = litros18;
+	}
+
+	// Método para definir quantas latas de tinta de 3.6L serão necessárias
+	public void setLitros3(Integer litros3) {
+		this.litros3 = litros3;
+	}
+
+	// Método para definir quantas latas de tinta de 2.5L serão necessárias
+	public void setLitros2(Integer litros2) {
+		this.litros2 = litros2;
+	}
+
+	// Método para definir quantas latas de tinta de 0.5L serão necessárias
+	public void setLitros0(Integer litros0) {
+		this.litros0 = litros0;
+	}
+
+	
 
 }
